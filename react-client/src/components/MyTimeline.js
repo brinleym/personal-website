@@ -24,9 +24,8 @@ import CustomTimelineItem from './CustomTimelineItem';
 const useStyles = makeStyles((theme) => ({
   tempPaper: {
     padding: theme.spacing(2),
-    // textAlign: 'center',
     color: theme.palette.text.secondary,
-    backgroundColor: '#123456'
+    backgroundColor: theme.palette.primary.dark
   },
   paper: {
     padding: '6px 16px',
@@ -46,6 +45,41 @@ function CustomizedTimeline() {
         title="Senior Cyber Software Engineer" 
         place="MITRE"
         type="work"
+      >
+      </CustomTimelineItem>
+      <CustomTimelineItem 
+        date="September 2019 - April 2021" 
+        title="Network Security Engineer" 
+        place="MITRE"
+        type="work"
+      >
+      </CustomTimelineItem>
+      <CustomTimelineItem 
+        date="May 2019" 
+        title="Graduated from Tufts!" 
+        place="Tufts University"
+        type="school"
+      >
+      </CustomTimelineItem>
+      <CustomTimelineItem 
+        date="May 2018 - September 2019" 
+        title="Network Security Intern" 
+        place="MITRE"
+        type="work"
+      >
+      </CustomTimelineItem>
+      <CustomTimelineItem 
+        date="June 2017 - August 2017" 
+        title="Cyber Security Intern" 
+        place="State Street"
+        type="work"
+      >
+      </CustomTimelineItem>
+      <CustomTimelineItem 
+        date="September 2015" 
+        title="Started Tufts!" 
+        place="Tufts University"
+        type="school"
       >
       </CustomTimelineItem>
       <TimelineItem>

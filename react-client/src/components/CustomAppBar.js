@@ -33,7 +33,13 @@ export default function CustomAppBar() {
             Brinley Macnamara
           </Typography>
           <Button color="inherit">Blog</Button>
-          <Button color="inherit">Resume</Button>
+          <Button 
+            color="inherit" 
+            href="https://drive.google.com/file/d/1lydIVQw7hMTmeaTssO3KAzt2QNJE6Qn1/view?usp=sharing"
+            target="_blank"
+          >
+            Resume
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

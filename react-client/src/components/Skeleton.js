@@ -16,10 +16,10 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: theme.spacing(2),
-    // textAlign: 'center',
   },
-  tempTextPadding: {
-    paddingBottom: theme.spacing(2)
+  sectionTitle: {
+    paddingBottom: theme.spacing(2),
+    textAlign: 'center'
   }
 }));
 
@@ -31,23 +31,23 @@ export default function Skeleton() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
-            <Typography variant="body1">Overview will go here</Typography>
+            <Typography variant="h4" className={classes.sectionTitle}>Overview</Typography>
             <Overview></Overview>
           </Paper>
         </Grid>
         <Grid item xs={12}>
-          <Paper className={classes.paper}>
-            <Typography variant="body1" className={classes.tempTextPadding}>Works will go here</Typography>
+          {/* <Paper className={classes.paper}> */}
+            <Typography variant="h4" className={classes.sectionTitle}>Work</Typography>
             <WorksGrid></WorksGrid>
-          </Paper>
+          {/* </Paper> */}
         </Grid>
         <Grid item xs={12}>
-          <Paper className={classes.paper}>
-            <Typography variant="body1">Timeline will go here</Typography>
+          {/* <Paper className={classes.paper}> */}
+            <Typography variant="h4" className={classes.sectionTitle}>Timeline</Typography>
             <MyTimeline></MyTimeline>
-          </Paper>
+          {/* </Paper> */}
         </Grid>
-        <Grid item xs={6}>
+{/*         <Grid item xs={6}>
           <Paper className={classes.paper}>xs=6</Paper>
         </Grid>
         <Grid item xs={3}>
@@ -61,7 +61,7 @@ export default function Skeleton() {
         </Grid>
         <Grid item xs={3}>
           <Paper className={classes.paper}>xs=3</Paper>
-        </Grid>
+        </Grid> */}
       </Grid>
     </div>
   );

@@ -8,22 +8,16 @@ const useStyles = makeStyles({
   root: {
     // minWidth: 275,
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
   title: {
     fontSize: 14,
   },
   pos: {
-    marginBottom: 12,
+    // marginBottom: 12,
   },
 });
 
 export default function TimelineItemContentCard(props) {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.root}>
@@ -34,10 +28,10 @@ export default function TimelineItemContentCard(props) {
         <Typography className={classes.pos} color="textSecondary">
           {props.place}
         </Typography>
-        <Typography variant="body2" component="p">
+        {/* <Typography variant="body2" component="p">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
           incididunt ut labore et dolore magna aliqua. 
-        </Typography>
+        </Typography> */}
       </CardContent>
     </Card>
   );
