@@ -48,9 +48,6 @@ function CustomizedTimeline() {
         type="work"
       >
       </CustomTimelineItem>
-{/*       <CustomTimelineItem></CustomTimelineItem>
-      <CustomTimelineItem></CustomTimelineItem>
-      <CustomTimelineItem></CustomTimelineItem> */}
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot color="secondary">
