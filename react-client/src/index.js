@@ -5,13 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import red from '@material-ui/core/colors/red';
 
 // const DEFAULT_BACKGROUND_COLOR = '#282c34';
 // const PAPER_BACKGROUND_COLOR = '#212121';
 
 let theme = createTheme({
   palette: {
-    type: "dark"
+    type: "dark",
+    primary: {
+      main: red[700]
+    }
   }
 });
 

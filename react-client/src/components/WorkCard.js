@@ -11,9 +11,7 @@ import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import Tooltip from '@material-ui/core/Tooltip';
-import { red } from '@material-ui/core/colors';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 import LaunchIcon from '@material-ui/icons/Launch';
 import NotesIcon from '@material-ui/icons/Notes';
 import SvgIcon from '@material-ui/core/SvgIcon';
@@ -26,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
+    opacity: 0.6
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -97,7 +96,11 @@ export default function WorkCard(props) {
       </CardContent>
       <CardActions disableSpacing>
         <Tooltip title="Open">
-          <IconButton aria-label="open in new tab">
+          <IconButton 
+            aria-label="open in new tab"
+            href={props.link}
+            target="_blank"
+          >
             <LaunchIcon />
           </IconButton>          
         </Tooltip>
