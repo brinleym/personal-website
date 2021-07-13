@@ -11,7 +11,7 @@ const CustomButton = () => {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.root}>
       <Button variant="contained">Click Me</Button>
     </div>
   )
