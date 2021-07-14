@@ -3,25 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ThemeProvider, createTheme, responsiveFontSizes } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-
-
-let theme = createTheme({
-  palette: {
-    type: "dark"
-  }
-});
-
-theme = responsiveFontSizes(theme);
 
 ReactDOM.render(
-  // <ThemeProvider theme={theme}>
-  //   <CssBaseline />
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-  // </ThemeProvider>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

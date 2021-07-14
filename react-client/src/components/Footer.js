@@ -24,7 +24,8 @@ const Footer = () => {
   return (
     <div className={classes.root}>
       <Paper className={classes.paper} elevation={2} square>
-        <Typography variant="body1">This is the app's footer</Typography>
+        <Typography variant="caption" component="p">Contact: brinley.macnamara@gmail.com</Typography>
+        <Typography variant="caption">Copyright &copy; 2021 Brinley Macnamara. All Rights Reserved.</Typography>
       </Paper>
     </div>
   )

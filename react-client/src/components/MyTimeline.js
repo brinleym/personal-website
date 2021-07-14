@@ -28,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,
   },
+  captionText: {
+    textAlign: 'center'
+  }
 }));
 
 function CustomizedTimeline() {
@@ -103,9 +106,9 @@ export default function MyTimeline() {
       <Grid container spacing={3} justifyContent="center" className={classes.root}>
         <Grid item xs={12} sm={8}>
           <Paper className={classes.tempPaper}>
-            <Typography variant="caption">Present</Typography>
+            <Typography variant="caption" component="h6" className={classes.captionText}>Present</Typography>
             <CustomizedTimeline></CustomizedTimeline>
-            <Typography variant="caption">Past</Typography>
+            <Typography variant="caption" component="h6" className={classes.captionText}>Past</Typography>
           </Paper>
         </Grid>
       </Grid>

@@ -8,11 +8,15 @@ import Typography from '@material-ui/core/Typography';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
 const useStyles = makeStyles((theme) => ({
-  textPaddingRight: {
-    // addingRight: theme.spacing(1)
+  root: {
+    backgroundColor: theme.palette.type === "dark" ? theme.palette.background.paper : theme.palette.primary.main,
+    color: theme.palette.type === "dark" ? theme.palette.text.primary : theme.palette.primary.contrastText
   },
   textPaddingLeft: {
     paddingLeft: theme.spacing(1)
+  },
+  textPaddingBottom: {
+    paddingBottom: theme.spacing(2)
   }
 }));
 function WaveIcon() {
@@ -41,15 +45,22 @@ export default function BioCard() {
   return (
     <Card className={classes.root}>
         <CardContent>
-          <Typography variant="h5" component="span" className={classes.textPaddingRight}>hello there</Typography>
-          <WaveIcon></WaveIcon>
-          <Typography variant="h5" component="span" className={classes.textPaddingLeft}>my name is brinley.</Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-            mollit anim id est laborum.
+          <div className={classes.textPaddingBottom}>
+            <Typography variant="h5" component="span" className={classes.textPaddingRight}>hello there</Typography>
+            <WaveIcon className={classes.svgNegativeBottomMargin}></WaveIcon>
+            <Typography variant="h5" component="span" className={classes.textPaddingLeft}>my name is brinley macnamara.</Typography>
+          </div>
+          <Typography variant="body1" color="textSecondary" component="p" gutterBottom>
+            Thank you for visiting my website! I’m a versatile software/networks engineer who loves
+            technical writing, data science, and designing better customer experiences. I also
+            have a strong background in cyber security.
+            Outside of my regular work, I enjoy mentoring early careers and blogging. 
+          </Typography>
+          <Typography variant="body1" color="textSecondary" component="p" gutterBottom>
+            My most important near term goal is to start my own business around improving patient experience.
+          </Typography>
+          <Typography variant="body1" color="textSecondary" component="p">
+            Hit me up at <b>brinley.macnamara@gmail.com</b>
           </Typography>
         </CardContent>
       <CardActions>

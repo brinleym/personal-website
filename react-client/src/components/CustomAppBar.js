@@ -5,15 +5,23 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  title: {
+  titleDesktop: {
     flexGrow: 1,
+    [theme.breakpoints.down('sm')]: {
+      display: 'none', // remove on small or below width screens
+    },
+  },
+  titleMobile: {
+    flexGrow: 1,
+    [theme.breakpoints.up('md')]: {
+      display: 'none', // remove on medium or above width screens
+    },
   },
   darkModeButton: {
     marginLeft: theme.spacing(2)
@@ -31,7 +39,10 @@ export default function CustomAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" className={classes.appBar}>
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" className={classes.titleMobile}>
+            Brinley M.
+          </Typography>
+          <Typography variant="h6" className={classes.titleDesktop}>
             Brinley Macnamara
           </Typography>
           <Button color="inherit" disabled>Blog</Button>
