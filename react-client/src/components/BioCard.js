@@ -51,7 +51,7 @@ export default function BioCard() {
             <Typography variant="h5" component="span" className={classes.textPaddingLeft}>my name is brinley macnamara.</Typography>
           </div>
           <Typography variant="body1" color="textSecondary" component="p" gutterBottom>
-            Thank you for visiting my website! I’m a versatile software/networks engineer who loves
+            Thank you for visiting my website! I’m a versatile software/networks engineer/up-and-coming podcaster who loves
             technical writing, data science, and designing better customer experiences. Outside of my regular work,
             I enjoy morning early careers and blogging about career hacks that I wish I knew about back when I was just starting out.
           </Typography>
