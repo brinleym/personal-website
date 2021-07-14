@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
   },
   darkModeButton: {
     marginLeft: theme.spacing(2)
+  },
+  appBar: {
+    backgroundColor: theme.palette.type === "dark" ? theme.palette.grey[900] : theme.palette.primary.main
   }
 }));
 
@@ -28,7 +31,7 @@ export default function CustomAppBar(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="default">
+      <AppBar position="static" className={classes.appBar}>
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
@@ -36,7 +39,7 @@ export default function CustomAppBar(props) {
           <Typography variant="h6" className={classes.title}>
             Brinley Macnamara
           </Typography>
-          <Button color="inherit">Blog</Button>
+          <Button color="inherit" disabled>Blog</Button>
           <Button 
             color="inherit" 
             href="https://drive.google.com/file/d/1lydIVQw7hMTmeaTssO3KAzt2QNJE6Qn1/view?usp=sharing"

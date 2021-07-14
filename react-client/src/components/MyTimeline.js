@@ -14,11 +14,16 @@ import ChildCareIcon from '@material-ui/icons/ChildCare';
 import CustomTimelineItem from './CustomTimelineItem';
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    paddingBottom: theme.spacing(2)
+  },
   tempPaper: {
     padding: theme.spacing(2),
   },
   paper: {
     padding: '6px 16px',
+    backgroundColor: theme.palette.type === "dark" ? theme.palette.background.paper : theme.palette.secondary.main,
+    color: theme.palette.type === "dark" ? theme.palette.text.primary : theme.palette.secondary.contrastText
   },
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,
@@ -80,7 +85,7 @@ function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={1} className={classes.paper}>
-            <Typography variant="h6" component="h1">
+            <Typography variant="body1" component="h2">
               Pre-professional life
             </Typography>
           </Paper>
@@ -95,7 +100,7 @@ export default function MyTimeline() {
 
   return (
     <React.Fragment>
-      <Grid container spacing={3} justifyContent="center">
+      <Grid container spacing={3} justifyContent="center" className={classes.root}>
         <Grid item xs={12} sm={8}>
           <Paper className={classes.tempPaper}>
             <Typography variant="caption">Present</Typography>

@@ -34,8 +34,8 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: theme.palette.primary.light,
-    color: '#000000' // icons should have "on primary" color (which is black for the Dark theme)
+    backgroundColor: theme.palette.type === "dark" ? theme.palette.primary.light : theme.palette.primary.main,
+    color: theme.palette.type === "dark" ? "#000000" : "#ffffff" // icons should have "on primary" color (which is black for the Dark theme)
   },
 }));
 
