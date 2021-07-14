@@ -16,12 +16,12 @@ let theme = createTheme({
 theme = responsiveFontSizes(theme);
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <CssBaseline />
+  // <ThemeProvider theme={theme}>
+  //   <CssBaseline />
     <React.StrictMode>
       <App />
-    </React.StrictMode>
-  </ThemeProvider>,
+    </React.StrictMode>,
+  // </ThemeProvider>,
   document.getElementById('root')
 );
 

@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function CustomAppBar() {
+export default function CustomAppBar(props) {
   const classes = useStyles();
 
   return (
@@ -44,7 +44,12 @@ export default function CustomAppBar() {
           >
             Resume
           </Button>
-          <IconButton color="inherit" aria-label="dark-mode-toggle" className={classes.darkModeButton}>
+          <IconButton 
+            color="inherit" 
+            aria-label="dark-mode-toggle" 
+            className={classes.darkModeButton}
+            onClick={() => props.toggleDarkMode(!props.darkIsEnabled)}
+          >
             <Brightness4Icon />
           </IconButton>
         </Toolbar>
