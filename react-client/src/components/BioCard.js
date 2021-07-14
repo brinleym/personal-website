@@ -52,9 +52,8 @@ export default function BioCard() {
           </div>
           <Typography variant="body1" color="textSecondary" component="p" gutterBottom>
             Thank you for visiting my website! I’m a versatile software/networks engineer who loves
-            technical writing, data science, and designing better customer experiences. I also
-            have a strong background in cyber security.
-            Outside of my regular work, I enjoy mentoring early careers and blogging. 
+            technical writing, data science, and designing better customer experiences. Outside of my regular work,
+            I enjoy morning early careers and blogging about career hacks that I wish I knew about back when I was just starting out.
           </Typography>
           <Typography variant="body1" color="textSecondary" component="p" gutterBottom>
             My most important near term goal is to start my own business around improving patient experience.

@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import WorkCard from './WorkCard';
 
 import serverless_img from '../static/images/DataCenter.jpg';
-import printer_img from '../static/images/3DPrinter.jpg';
+import lattice_img from '../static/images/LatticeTower.jpg';
 import cellular_img from '../static/images/CellTower.jpg';
 import stethoscope_img from '../static/images/Healthcare.jpg';
 import pi_img from '../static/images/RaspberryPi.jpg';
@@ -39,21 +39,6 @@ const WorksGrid = () => {
           {/* <Paper className={classes.paper}> */}
             <WorkCard
               type="podcast"
-              title="Mechanical Metamaterials Podcast"
-              date="TBD"
-              image={printer_img}
-              image_title="3D printer"
-              description=""
-              details=""
-              link="https://drive.google.com/file/d/1n7MitolN3WmklgiO1y5l8ZurzzURxTVj/view?usp=sharing"
-              >
-              </WorkCard>
-          {/* </Paper> */}
-        </Grid>
-        <Grid item xs={12} md={6}>
-          {/* <Paper className={classes.paper}> */}
-            <WorkCard
-              type="podcast"
               title="6G and Artificial Intelligence Podcast"
               date="TBD"
               image={cellular_img}
@@ -63,6 +48,21 @@ const WorksGrid = () => {
               link="https://drive.google.com/file/d/1HxZPtMnYUs5o6fBDs-uvUXCsNKbC_9uj/view?usp=sharing"
               >
             </WorkCard>           
+          {/* </Paper> */}
+        </Grid>
+        <Grid item xs={12} md={6}>
+          {/* <Paper className={classes.paper}> */}
+            <WorkCard
+              type="podcast"
+              title="Mechanical Metamaterials Podcast"
+              date="TBD"
+              image={lattice_img}
+              image_title="3D printer"
+              description=""
+              details=""
+              link="https://drive.google.com/file/d/1n7MitolN3WmklgiO1y5l8ZurzzURxTVj/view?usp=sharing"
+              >
+              </WorkCard>
           {/* </Paper> */}
         </Grid>
         <Grid item xs={12} md={6}>
@@ -81,7 +81,6 @@ const WorksGrid = () => {
           {/* </Paper> */}
         </Grid>
         <Grid item xs={12} md={6}>
-          {/* <Paper className={classes.paper}> */}
             <WorkCard
               type="code"
               title="Coming soon: Object-detecting Raspberry Pi"
@@ -93,7 +92,6 @@ const WorksGrid = () => {
               link=""
               >
             </WorkCard>  
-          {/* </Paper> */}
         </Grid>
       </Grid>
     </React.Fragment>

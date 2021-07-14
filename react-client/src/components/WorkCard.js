@@ -99,6 +99,7 @@ export default function WorkCard(props) {
             aria-label="open in new tab"
             href={props.link}
             target="_blank"
+            disabled={props.date === "TBD" ? true : false}
           >
             <LaunchIcon />
           </IconButton>          
@@ -110,6 +111,7 @@ export default function WorkCard(props) {
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
+          disabled={props.date === "TBD" ? true : false}
         >
           <ExpandMoreIcon />
         </IconButton>
