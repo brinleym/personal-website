@@ -13,8 +13,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
-    color: '#111',
-    backgroundColor: '#929292',
+    backgroundColor: theme.palette.grey[900],
   }
 }));
 
@@ -23,7 +22,7 @@ const Footer = () => {
 
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
+      <Paper className={classes.paper} elevation={0}>
         <Typography variant="body1">This is the app's footer</Typography>
       </Paper>
     </div>

@@ -10,22 +10,12 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ChildCareIcon from '@material-ui/icons/ChildCare';
 
-// Props for Timeline Card
-//
-// Date range (string)
-// Title (string)
-// Place (string)
-// Details (string)
-// Type (string / work, school, project)
-
 // Custom Components
 import CustomTimelineItem from './CustomTimelineItem';
 
 const useStyles = makeStyles((theme) => ({
   tempPaper: {
     padding: theme.spacing(2),
-    color: theme.palette.text.secondary,
-    backgroundColor: theme.palette.primary.dark
   },
   paper: {
     padding: '6px 16px',
@@ -108,9 +98,9 @@ export default function MyTimeline() {
       <Grid container spacing={3} justifyContent="center">
         <Grid item xs={12} sm={8}>
           <Paper className={classes.tempPaper}>
-            <Typography>Present</Typography>
+            <Typography variant="caption">Present</Typography>
             <CustomizedTimeline></CustomizedTimeline>
-            <Typography>Past</Typography>
+            <Typography variant="caption">Past</Typography>
           </Paper>
         </Grid>
       </Grid>

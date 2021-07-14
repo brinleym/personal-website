@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Brightness4Icon from '@material-ui/icons/Brightness4';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  darkModeButton: {
+    marginLeft: theme.spacing(2)
+  }
 }));
 
 export default function CustomAppBar() {
@@ -24,7 +28,7 @@ export default function CustomAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" color="default">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
@@ -40,6 +44,9 @@ export default function CustomAppBar() {
           >
             Resume
           </Button>
+          <IconButton color="inherit" aria-label="dark-mode-toggle" className={classes.darkModeButton}>
+            <Brightness4Icon />
+          </IconButton>
         </Toolbar>
       </AppBar>
     </div>

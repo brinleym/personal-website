@@ -16,15 +16,12 @@ import LaunchIcon from '@material-ui/icons/Launch';
 import NotesIcon from '@material-ui/icons/Notes';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
-import serverless_img from '../static/images/ServerlessComputing.jpg';
-
 const useStyles = makeStyles((theme) => ({
   root: {
   },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
-    opacity: 0.6
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -37,16 +34,20 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.primary.light,
+    color: '#000000' // icons should have "on primary" color (which is black for the Dark theme)
   },
 }));
 
 function WorkTypeIcon(props) {
   const workType = props.type;
-  if (workType == "written") {
-    return <NotesIcon />;
+  if (workType === "code") {
+    // Code icon
+    <SvgIcon>
+      <path fill="currentColor" d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z" />;
+    </SvgIcon>
   }
-  else if (workType == "podcast") {
+  else if (workType === "podcast") {
     return (
       // Podcast icon
       <SvgIcon>
@@ -55,10 +56,8 @@ function WorkTypeIcon(props) {
     )
   }
   return (
-    // Code icon
-    <SvgIcon>
-      <path fill="currentColor" d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z" />;
-    </SvgIcon>
+    // Icon denoting deliverable is a piece of writing
+    <NotesIcon />
   )
 }
 
@@ -89,9 +88,7 @@ export default function WorkCard(props) {
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

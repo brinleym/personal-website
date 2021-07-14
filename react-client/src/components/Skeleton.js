@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography  from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 // Custom Components
@@ -18,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
   },
   sectionTitle: {
+    paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(2),
     textAlign: 'center'
   }
@@ -30,10 +30,10 @@ export default function Skeleton() {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Paper className={classes.paper}>
+          {/* <Paper className={classes.paper}> */}
             <Typography variant="h4" className={classes.sectionTitle}>Overview</Typography>
             <Overview></Overview>
-          </Paper>
+          {/* </Paper> */}
         </Grid>
         <Grid item xs={12}>
           {/* <Paper className={classes.paper}> */}

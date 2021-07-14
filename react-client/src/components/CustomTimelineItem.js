@@ -9,18 +9,41 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
 import Typography from '@material-ui/core/Typography';
+import blue from '@material-ui/core/colors/blue';
 
 // Custom Components
 import TimelineItemContentCard from './TimelineItemContentCard';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  timelineDotBlue: {
+    backgroundColor: blue[200]
   }
 }));
 
-const CustomTimelineItem = (props) => {
+function CustomTimelineDot(props) {
   const classes = useStyles();
+  const eventType = props.type;
 
+  if (eventType === "work") {
+    return (
+      <TimelineDot>
+        <WorkIcon />
+      </TimelineDot>
+    );
+  }
+  else if (eventType === "school") {
+    return (
+      <TimelineDot className={classes.timelineDotBlue}>
+        <SchoolIcon />
+      </TimelineDot>
+    )
+  }
+  return (
+    <TimelineDot></TimelineDot>
+  )
+}
+
+const CustomTimelineItem = (props) => {
   return (
     <TimelineItem>
       <TimelineOppositeContent>
@@ -29,12 +52,7 @@ const CustomTimelineItem = (props) => {
         </Typography>
       </TimelineOppositeContent>
       <TimelineSeparator>
-        <TimelineDot>
-          {props.type == 'work'
-          ? <WorkIcon />
-          : <SchoolIcon />
-          }
-        </TimelineDot>
+        <CustomTimelineDot type={props.type}></CustomTimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent>
