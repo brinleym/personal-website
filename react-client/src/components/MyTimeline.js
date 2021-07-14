@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: '6px 16px',
-    backgroundColor: theme.palette.type === "dark" ? theme.palette.background.paper : theme.palette.secondary.main,
-    color: theme.palette.type === "dark" ? theme.palette.text.primary : theme.palette.secondary.contrastText
+    backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.secondary.contrastText
   },
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,

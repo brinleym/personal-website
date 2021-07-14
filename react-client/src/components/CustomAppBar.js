@@ -12,9 +12,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
   title: {
     flexGrow: 1,
   },
@@ -22,7 +19,8 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(2)
   },
   appBar: {
-    backgroundColor: theme.palette.type === "dark" ? theme.palette.grey[900] : theme.palette.primary.main
+    backgroundColor: theme.palette.type === "dark" ? theme.palette.grey[900] : theme.palette.primary.main,
+    color: theme.palette.type === "dark" ? theme.palette.text.primary : theme.palette.primary.contrastText
   }
 }));
 
@@ -33,9 +31,6 @@ export default function CustomAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" className={classes.appBar}>
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
           <Typography variant="h6" className={classes.title}>
             Brinley Macnamara
           </Typography>

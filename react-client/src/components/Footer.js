@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: 'center',
     backgroundColor: theme.palette.type === "dark" ? theme.palette.grey[900] : theme.palette.primary.main,
-    color: '#ffffff',
+    color: theme.palette.type === "dark" ? theme.palette.text.primary : theme.palette.primary.contrastText
   }
 }));
 

@@ -59,6 +59,7 @@ const CustomTimelineItem = (props) => {
         <TimelineItemContentCard
           title={props.title}
           place={props.place}
+          type={props.type}
         ></TimelineItemContentCard>
       </TimelineContent>
     </TimelineItem>

@@ -6,20 +6,14 @@ import Container from '@material-ui/core/Container';
 // Theme setting dependencies
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import cyan from '@material-ui/core/colors/cyan';
+import amber from '@material-ui/core/colors/amber';
 
 
 // Custom Components
 import Skeleton from './components/Skeleton';
 import CustomAppBar from './components/CustomAppBar';
 import Footer from './components/Footer';
-
-/* let theme = createTheme({
-  palette: {
-    type: "dark"
-  }
-});
-
-theme = responsiveFontSizes(theme); */
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,6 +29,12 @@ function App() {
   let theme = createTheme({
     palette: {
       type: dark ? 'dark' : 'light',
+      primary: {
+        main: cyan[600],
+      },
+      secondary: {
+        main: amber[400]
+      }
     }
   });
   
