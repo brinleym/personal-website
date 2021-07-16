@@ -58,7 +58,7 @@ function WorkTypeIcon(props) {
     )
   }
   return (
-    // Icon denoting deliverable is a piece of writing
+    // Default icon; denotes deliverable is a piece of writing
     <NotesIcon />
   )
 }

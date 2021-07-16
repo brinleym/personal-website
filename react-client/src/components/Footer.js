@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     bottom: 0,
-    position: 'relative', // consider changing to absolute
+    position: 'relative',
     width: '100%',
   },
   paper: {

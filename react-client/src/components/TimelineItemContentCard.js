@@ -8,7 +8,6 @@ import grey from '@material-ui/core/colors/grey';
 
 const useStyles = makeStyles((theme) => ({
   workCardRoot: {
-    // minWidth: 275,
     backgroundColor: grey[400],
     color: '#000'
   },

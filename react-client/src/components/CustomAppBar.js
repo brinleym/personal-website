@@ -14,13 +14,13 @@ const useStyles = makeStyles((theme) => ({
   titleDesktop: {
     flexGrow: 1,
     [theme.breakpoints.down('sm')]: {
-      display: 'none', // remove on small or below width screens
+      display: 'none', // remove desktop title on small or below width screens
     },
   },
   titleMobile: {
     flexGrow: 1,
     [theme.breakpoints.up('md')]: {
-      display: 'none', // remove on medium or above width screens
+      display: 'none', // remove mobile title on medium or above width screens
     },
   },
   darkModeButton: {

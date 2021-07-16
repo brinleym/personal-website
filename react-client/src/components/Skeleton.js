@@ -30,38 +30,17 @@ export default function Skeleton() {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          {/* <Paper className={classes.paper}> */}
-            <Typography variant="h4" className={classes.sectionTitle}>Overview</Typography>
-            <Overview></Overview>
-          {/* </Paper> */}
+          <Typography variant="h4" className={classes.sectionTitle}>Overview</Typography>
+          <Overview></Overview>
         </Grid>
         <Grid item xs={12}>
-          {/* <Paper className={classes.paper}> */}
-            <Typography variant="h4" className={classes.sectionTitle}>Work</Typography>
-            <WorksGrid></WorksGrid>
-          {/* </Paper> */}
+          <Typography variant="h4" className={classes.sectionTitle}>Work</Typography>
+          <WorksGrid></WorksGrid>
         </Grid>
         <Grid item xs={12}>
-          {/* <Paper className={classes.paper}> */}
-            <Typography variant="h4" className={classes.sectionTitle}>Timeline</Typography>
-            <MyTimeline></MyTimeline>
-          {/* </Paper> */}
+          <Typography variant="h4" className={classes.sectionTitle}>Timeline</Typography>
+          <MyTimeline></MyTimeline>
         </Grid>
-{/*         <Grid item xs={6}>
-          <Paper className={classes.paper}>xs=6</Paper>
-        </Grid>
-        <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </Grid>
-        <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </Grid>
-        <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </Grid>
-        <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </Grid> */}
       </Grid>
     </div>
   );
