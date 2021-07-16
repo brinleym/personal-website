@@ -65,7 +65,11 @@ export default function BioCard() {
           </Typography>
         </CardContent>
       <CardActions>
-        <Button size="small" disabled>
+        <Button 
+          size="small"
+          href="https://brinley.substack.com/archive"
+          target="_blank"
+        >
           Blog
         </Button>
         <Button 

@@ -45,7 +45,13 @@ export default function CustomAppBar(props) {
           <Typography variant="h6" className={classes.titleDesktop}>
             Brinley Macnamara
           </Typography>
-          <Button color="inherit" disabled>Blog</Button>
+          <Button 
+            color="inherit"
+            href="https://brinley.substack.com/archive"
+            target="_blank"
+          >
+            Blog
+          </Button>
           <Button 
             color="inherit" 
             href="https://drive.google.com/file/d/1lydIVQw7hMTmeaTssO3KAzt2QNJE6Qn1/view?usp=sharing"
