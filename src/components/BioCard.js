@@ -58,9 +58,8 @@ export default function BioCard() {
             career hacks I wish I knew about back when I was first starting out.
           </Typography>
           <Typography variant="body1" color="textSecondary" component="p" gutterBottom>
-            My most important near term goal is to start my own business around 
-            improving patient experience, because, quite frankly, it currently sucks 
-            and nobody else seems to want to do anything about it.
+            My most important near term goal is to be hired at a space company. I want to
+            dedicate my life to helping make our species interplanetary.
           </Typography>
           <Typography variant="body1" color="textSecondary" component="p">
             Hit me up at <b>brinley.macnamara@gmail.com</b>
