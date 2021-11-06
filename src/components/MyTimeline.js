@@ -40,14 +40,14 @@ function CustomizedTimeline() {
     <Timeline align="alternate">
       <CustomTimelineItem 
         date="April 2021 - present" 
-        title="Senior Cyber Software Engineer" 
+        title="Senior Software Engineer" 
         place="MITRE"
         type="work"
       >
       </CustomTimelineItem>
       <CustomTimelineItem 
         date="September 2019 - April 2021" 
-        title="Network Security Engineer" 
+        title="Software Engineer" 
         place="MITRE"
         type="work"
       >
@@ -61,7 +61,7 @@ function CustomizedTimeline() {
       </CustomTimelineItem>
       <CustomTimelineItem 
         date="May 2018 - September 2019" 
-        title="Network Security Intern" 
+        title="Engineering Intern" 
         place="MITRE"
         type="work"
       >
