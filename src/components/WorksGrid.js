@@ -14,7 +14,7 @@ const WorksGrid = () => {
   return (
     <React.Fragment>
       <Grid container spacing={3}>
-        <Grid item xs={6} md={4}>
+        <Grid item xs={12} md={4}>
           <WorkCard
               type="written"
               title="Workshop: STEM in the Age of TikTok"
@@ -35,7 +35,7 @@ const WorksGrid = () => {
             >
             </WorkCard>
           </Grid>
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} md={4}>
             <WorkCard
               type="code"
               title="Medical Cutsheets (aka Medsheet)"
@@ -59,7 +59,7 @@ const WorksGrid = () => {
               >
             </WorkCard>  
           </Grid>
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} md={4}>
             <WorkCard
               type="podcast"
               title="Mechanical Metamaterials Podcast"
@@ -92,7 +92,7 @@ const WorksGrid = () => {
               >
               </WorkCard>
           </Grid>
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} md={4}>
             <WorkCard
               type="podcast"
               title="6G and Artificial Intelligence Podcast"
@@ -127,7 +127,7 @@ const WorksGrid = () => {
               >
             </WorkCard>           
           </Grid>
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} md={4}>
             <WorkCard
               type="written"
               title="Early Career Hacks"
@@ -149,7 +149,7 @@ const WorksGrid = () => {
             >
             </WorkCard>
           </Grid>
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} md={4}>
             <WorkCard
               type="written"
               title="Serverless Computing Research"
@@ -179,7 +179,7 @@ const WorksGrid = () => {
             >
             </WorkCard>
           </Grid>
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} md={4}>
             <WorkCard
               type="code"
               title="Coming soon: Object-detecting Raspberry Pi"
