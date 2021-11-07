@@ -37,8 +37,7 @@ export default function BioCard() {
             back when I was first starting out.
           </Typography>
           <Typography variant="body1" color="textSecondary" component="p" gutterBottom>
-            My most important near term goal is to be hired at a space company. I want to
-            dedicate my life to helping make our species interplanetary.
+            I'm currently employed as a Software Engineer (based in Boston).
           </Typography>
           <Typography variant="body1" color="textSecondary" component="p">
             Hit me up at <b>brinley.macnamara@gmail.com</b>
