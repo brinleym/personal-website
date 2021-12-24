@@ -53,7 +53,7 @@ export default function BioCard() {
         </Button>
         <Button 
           size="small"
-          href="https://drive.google.com/file/d/1lydIVQw7hMTmeaTssO3KAzt2QNJE6Qn1/view?usp=sharing"
+          href="https://drive.google.com/file/d/1aUAlcdgJxW09JIOYgnPgW-Tmi09-aSZo/view?usp=sharing"
           target="_blank"
         >
           Resume
