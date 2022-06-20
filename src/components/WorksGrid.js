@@ -4,16 +4,28 @@ import WorkCard from './WorkCard';
 
 import tiktok_img from '../static/images/TikTok.jpg';
 import doctor_img from '../static/images/Doctor.jpg';
-import vr_img from '../static/images/VR.jpg';
-import lattice_img from '../static/images/LatticeTower.jpg';
 import chip_img from '../static/images/Chip.jpg';
 import cloud_img from '../static/images/Clouds.jpg';
 import boss_img from '../static/images/LikeABoss.jpg';
+import tf_podcast_img from '../static/images/mitres-tech-futures-podcast.jpg'
 
 const WorksGrid = () => {
   return (
     <React.Fragment>
       <Grid container spacing={3}>
+      <Grid item xs={12} md={4}>
+          <WorkCard
+              type="podcast"
+              title="MITRE's Tech Futures Podcast"
+              date="Now"
+              image={tf_podcast_img}
+              image_title="MITRE's Tech Futures Podcast Logo"
+              description="Created podcast series on emerging technology."
+              details="Listen wherever you get your podcasts."
+              link="https://mitrestechfuturespodcast.buzzsprout.com/"
+            >
+            </WorkCard>
+        </Grid>
         <Grid item xs={12} md={4}>
           <WorkCard
               type="written"
@@ -58,74 +70,6 @@ const WorksGrid = () => {
               link="https://medsheet.gitlab.io/landing/"
               >
             </WorkCard>  
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <WorkCard
-              type="podcast"
-              title="Mechanical Metamaterials Podcast"
-              date="April, 2021"
-              image={lattice_img}
-              image_title="Lattice Structure"
-              description="I hosted, wrote, and produced a podcast about a MITRE
-              research project on Mechanical Metamaterials."
-              details="When a group of Mechanical Engineers team up to 
-              investigate the emerging field of Mechanical Metamaterials, 
-              they find that recent advancements in 3D printing technology are 
-              enabling scientists to prototype everything from better shields 
-              against blunt force trauma to cloaks that could render an object 
-              undetectable by SONAR sound waves! Meanwhile, a Nanoscientist 
-              discusses both the challenges and the promises of fabricating 
-              Mechanical Metamaterials. Having had a hand in the nano-imaging 
-              and fabrication efforts underway at Lawrence Berkeley and MIT, 
-              she is acutely aware of the challenges the come with 3D printing 
-              at such small size scales but sees great opportunity three orders 
-              of magnitude up the size scale—which happens to be the sweet spot 
-              for Mechanical Metamaterials. With a growing body of evidence 
-              showing astounding performance enhancements with the use of 
-              Mechanical Metamaterials, will the manufacturing technology catch 
-              up fast enough so we can one day see the benefits of this 
-              technology?
-              Approved for Public Release; Distribution Unlimited. 
-              Public Release Case Number 21-1372
-              © 2021 The MITRE Corporation. All rights reserved."
-              link="https://drive.google.com/file/d/1n7MitolN3WmklgiO1y5l8ZurzzURxTVj/view?usp=sharing"
-              >
-              </WorkCard>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <WorkCard
-              type="podcast"
-              title="6G and Artificial Intelligence Podcast"
-              date="March, 2021"
-              image={vr_img}
-              image_title="Young woman playing a virtual reality video game"
-              description="Hosted, wrote, and produced a podcast on the 
-              intersection of AI and 6G."
-              details="As the worldwide rollout of 5th Generation (5G) cellular 
-              networks picks up pace, a team of researchers decide it’s time to 
-              start designing 6G. It’s an ambitious endeavor to say the least, 
-              as little is still known about what the impact of 5G will be, 
-              never mind what 6G will one day look like. Though one thing is 
-              clear: in 6G, digital information will no longer be confined to 
-              our screens. Whether it be through biocompatible computer chips, 
-              wearables, or self-driving cars, the world’s knowledge in our 6G 
-              future will be as accessible and seamlessly integrated into our 
-              daily lives as our own thoughts. This means that our future 
-              networks must be capable of transmitting vast sums of data almost 
-              instantaneously—a tall order when one considers the physical laws 
-              that will of course limit how fast we can transmit information 
-              over the air. Thus, 6G will be the first network wherein 
-              ubiquitous AI will be even more critical than the network 
-              architecture itself to drive the next wave of technological 
-              innovation. As the race to 6G begins, one question looms large: 
-              who will take the lead in building our future?
-              Approved for Public Release; Distribution Unlimited. 
-              Public Release Case Number 21-0675
-              © 2021 The MITRE Corporation. All rights reserved."
-
-              link="https://drive.google.com/file/d/1HxZPtMnYUs5o6fBDs-uvUXCsNKbC_9uj/view?usp=sharing"
-              >
-            </WorkCard>           
           </Grid>
           <Grid item xs={12} md={4}>
             <WorkCard
