@@ -43,8 +43,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### `npm run deploy`
 
-Deploys current branch to Github Pages. Under the hood, the command invokes
-`gh-pages`. `gh-pages` will build the website and commit the build to the `gh-pages` branch (**Note**: the branch will be created if it does not already exist). Then, Github Pages will automatically detect the new commit to `gh-pages` and begin serving the changes from that commit.
+Deploys current branch to Github Pages. Under the hood, the command invokes `predepoy` and `gh-pages`. `predeploy` will build the website and `gh-pages` will commit the build to the `gh-pages` branch (**note**: the branch will be created if it does not already exist). Then, Github Pages will automatically detect the new commit to `gh-pages` and begin serving the changes from that commit.
 
 ## Learn More
 
