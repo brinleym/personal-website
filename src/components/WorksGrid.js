@@ -20,7 +20,8 @@ const WorksGrid = () => {
               date="Now"
               image={vr_img}
               image_title="MITRE's Tech Futures Podcast Logo"
-              description="Created podcast series on emerging technology."
+              description="Created podcast series on emerging technology. Topics
+              include Metamaterials, Microweather, and Indistinguishability Obfuscation."
               details="Listen wherever you get your podcasts."
               link="https://mitrestechfuturespodcast.buzzsprout.com/"
             >
