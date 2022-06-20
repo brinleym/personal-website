@@ -2,12 +2,12 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import WorkCard from './WorkCard';
 
+import vr_img from '../static/images/VR.jpg';
 import tiktok_img from '../static/images/TikTok.jpg';
 import doctor_img from '../static/images/Doctor.jpg';
 import chip_img from '../static/images/Chip.jpg';
 import cloud_img from '../static/images/Clouds.jpg';
 import boss_img from '../static/images/LikeABoss.jpg';
-import tf_podcast_img from '../static/images/mitres-tech-futures-podcast.jpg'
 
 const WorksGrid = () => {
   return (
@@ -18,7 +18,7 @@ const WorksGrid = () => {
               type="podcast"
               title="MITRE's Tech Futures Podcast"
               date="Now"
-              image={tf_podcast_img}
+              image={vr_img}
               image_title="MITRE's Tech Futures Podcast Logo"
               description="Created podcast series on emerging technology."
               details="Listen wherever you get your podcasts."
