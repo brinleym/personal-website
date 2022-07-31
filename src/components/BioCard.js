@@ -33,7 +33,7 @@ export default function BioCard() {
             Thank you for visiting my website! I’m a versatile software engineer 
             who loves writing, designing websites, and creating better customer 
             experiences. I'm currently employed as a Software Engineer (based in 
-            Boston) and do freelance software engineering on the side.
+            Boston).
           </Typography>
           <Typography variant="body1" color="textSecondary" component="p">
             Hit me up at <b>brinley.macnamara@gmail.com</b>
