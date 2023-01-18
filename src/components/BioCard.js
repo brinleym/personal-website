@@ -42,14 +42,7 @@ export default function BioCard() {
       <CardActions>
         <Button 
           size="small"
-          href="https://brinley.substack.com/archive"
-          target="_blank"
-        >
-          Blog
-        </Button>
-        <Button 
-          size="small"
-          href="https://drive.google.com/file/d/1aUAlcdgJxW09JIOYgnPgW-Tmi09-aSZo/view?usp=sharing"
+          href="https://drive.google.com/file/d/1ZF21Hf5jTE2ksws63KIicOjGuoqOIyyD/view?usp=sharing"
           target="_blank"
         >
           Resume

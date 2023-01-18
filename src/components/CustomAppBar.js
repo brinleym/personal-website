@@ -46,15 +46,8 @@ export default function CustomAppBar(props) {
             Brinley Macnamara
           </Typography>
           <Button 
-            color="inherit"
-            href="https://brinley.substack.com/archive"
-            target="_blank"
-          >
-            Blog
-          </Button>
-          <Button 
             color="inherit" 
-            href="https://drive.google.com/file/d/1aUAlcdgJxW09JIOYgnPgW-Tmi09-aSZo/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ZF21Hf5jTE2ksws63KIicOjGuoqOIyyD/view?usp=sharing"
             target="_blank"
           >
             Resume
