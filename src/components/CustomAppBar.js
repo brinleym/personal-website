@@ -47,7 +47,7 @@ export default function CustomAppBar(props) {
           </Typography>
           <Button 
             color="inherit" 
-            href="https://drive.google.com/file/d/1ZF21Hf5jTE2ksws63KIicOjGuoqOIyyD/view?usp=sharing"
+            href="https://drive.google.com/file/d/1lNXpOdEbLakawLiMK-TQnS_jUAp_yw9l/view?usp=sharing"
             target="_blank"
           >
             Resume
