@@ -15,9 +15,13 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import LaunchIcon from '@material-ui/icons/Launch';
 import NotesIcon from '@material-ui/icons/Notes';
 import SvgIcon from '@material-ui/core/SvgIcon';
+import { grey } from '@material-ui/core/colors';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+  },
+  cardHeader: {
   },
   media: {
     height: 0,
@@ -34,9 +38,13 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: theme.palette.type === "dark" ? theme.palette.primary.light : theme.palette.primary.main,
+    backgroundColor: theme.palette.primary.main,
     color: theme.palette.type === "dark" ? "#000000" : "#ffffff" // icons should have "on primary" color (which is black for the Dark theme)
   },
+  cardActions: {
+  },
+  dropDown: {
+  }
 }));
 
 function WorkTypeIcon(props) {
@@ -80,29 +88,23 @@ export default function WorkCard(props) {
           </Avatar>
         }
         title={props.title}
-        subheader={props.date}
-      />
-      <CardMedia
-        className={classes.media}
-        image={props.image}
-        title={props.image_title}
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
           {props.description}
         </Typography>
       </CardContent>
-      <CardActions disableSpacing>
-        <Tooltip title="Open">
-          <IconButton 
-            aria-label="open in new tab"
-            href={props.link}
-            target="_blank"
-            disabled={props.date === "TBD" ? true : false}
+      <CardActions disableSpacing className={classes.cardActions}>
+        <Button 
+          size="small" 
+          variant="outlined" 
+          color="secondary" 
+          disableElevation
+          href={props.link}
+          target="_blank"
           >
-            <LaunchIcon />
-          </IconButton>          
-        </Tooltip>
+            Demo
+        </Button>
         <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,
@@ -116,9 +118,9 @@ export default function WorkCard(props) {
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography>Details</Typography>
-          <Typography paragraph>
+        <CardContent className={classes.dropDown}>
+          <Typography color="textSecondary">Details</Typography>
+          <Typography paragraph color="textSecondary">
             {props.details}
           </Typography>
         </CardContent>

@@ -8,8 +8,6 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: theme.palette.type === "dark" ? theme.palette.background.paper : theme.palette.primary.main,
-    color: theme.palette.type === "dark" ? theme.palette.text.primary : theme.palette.primary.contrastText
   },
   textPaddingLeft: {
     paddingLeft: theme.spacing(1)
@@ -26,14 +24,23 @@ export default function BioCard() {
     <Card className={classes.root}>
         <CardContent>
           <div className={classes.textPaddingBottom}>
-            <Typography variant="h5" component="span" className={classes.textPaddingRight}>hello there!</Typography>
-            <Typography variant="h5" component="span" className={classes.textPaddingLeft}>my name is brinley macnamara.</Typography>
+            <Typography 
+              variant="h5" 
+              component="span" 
+              className={classes.textPaddingRight}>
+               hey!
+            </Typography>
+            <Typography 
+              variant="h5" 
+              component="span" 
+              className={classes.textPaddingLeft}>
+                I'm Brinley!
+            </Typography>
           </div>
           <Typography variant="body1" color="textSecondary" component="p" gutterBottom>
             Thank you for visiting my website! I’m a versatile software engineer 
-            who loves writing, designing websites, and creating better customer 
-            experiences. I'm currently employed as a Software Engineer (based in 
-            Boston).
+            who loves frontend engineering, ui design, and creating amazing
+            customer experiences. I'm currently based in Boston.
           </Typography>
           <Typography variant="body1" color="textSecondary" component="p">
             Hit me up at <b>brinley.macnamara@gmail.com</b>

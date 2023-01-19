@@ -9,6 +9,7 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ChildCareIcon from '@material-ui/icons/ChildCare';
+import { grey } from '@material-ui/core/colors';
 
 // Custom Components
 import CustomTimelineItem from './CustomTimelineItem';
@@ -22,11 +23,9 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: '6px 16px',
-    backgroundColor: theme.palette.secondary.main,
-    color: theme.palette.secondary.contrastText
   },
   secondaryTail: {
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.primary.main,
   },
   captionText: {
     textAlign: 'center'
@@ -39,14 +38,7 @@ function CustomizedTimeline() {
   return (
     <Timeline align="alternate">
       <CustomTimelineItem 
-        date="April 2021 - present" 
-        title="Senior Software Engineer" 
-        place="MITRE"
-        type="work"
-      >
-      </CustomTimelineItem>
-      <CustomTimelineItem 
-        date="September 2019 - April 2021" 
+        date="September 2019 - August 2022" 
         title="Software Engineer" 
         place="MITRE"
         type="work"

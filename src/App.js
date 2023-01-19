@@ -6,14 +6,14 @@ import Container from '@material-ui/core/Container';
 // Theme setting dependencies
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import cyan from '@material-ui/core/colors/cyan';
-import amber from '@material-ui/core/colors/amber';
+import { teal } from '@material-ui/core/colors';
 
 
 // Custom Components
 import Skeleton from './components/Skeleton';
 import CustomAppBar from './components/CustomAppBar';
 import Footer from './components/Footer';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,17 +24,45 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
 
-  const [dark, setDark] = useState(true);
+  const [mode, setDark] = useState('dark');
 
   let theme = createTheme({
     palette: {
-      type: dark ? 'dark' : 'light',
+      type: mode,
+      contrastThreshold: 4.5,
+      /*
       primary: {
-        main: cyan[600],
+        main: teal[600]
       },
-      secondary: {
-        main: amber[400]
+      background: {
+        paper: `rgba(0, 137, 123, 0.05)`
       }
+      */
+      ...(mode === 'light'
+      ? {
+          // palette values for light mode
+          primary: {
+            main: teal[600],
+          },
+          secondary: {
+            main: '#4a635e', // muted forest green (dark)
+          },
+          background: {
+            paper:  `rgba(0, 137, 123, 0.05)`,
+          }
+        }
+      : {
+          // palette values for dark mode
+          primary: {
+            main: teal[200]
+          },
+          secondary: {
+            main: '#b1ccc6', // muted forest green (light)
+          },
+          background: {
+            paper: `rgba(0, 137, 123, 0.05)`,
+          },
+        }),
     }
   });
   
@@ -46,7 +74,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className={classes.root}>
-        <CustomAppBar toggleDarkMode={setDark} darkIsEnabled={dark}></CustomAppBar>
+        <CustomAppBar toggleDarkMode={setDark} darkIsEnabled={mode === 'dark' ? true : false}></CustomAppBar>
         <Container>
           <Skeleton></Skeleton>       
         </Container>

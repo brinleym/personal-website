@@ -15,8 +15,8 @@ import blue from '@material-ui/core/colors/blue';
 import TimelineItemContentCard from './TimelineItemContentCard';
 
 const useStyles = makeStyles((theme) => ({
-  timelineDotBlue: {
-    backgroundColor: blue[200]
+  timelineDot: {
+    backgroundColor: theme.palette.secondary.main
   }
 }));
 
@@ -26,14 +26,14 @@ function CustomTimelineDot(props) {
 
   if (eventType === "work") {
     return (
-      <TimelineDot>
+      <TimelineDot className={classes.timelineDot}>
         <WorkIcon />
       </TimelineDot>
     );
   }
   else if (eventType === "school") {
     return (
-      <TimelineDot className={classes.timelineDotBlue}>
+      <TimelineDot className={classes.timelineDot}>
         <SchoolIcon />
       </TimelineDot>
     )

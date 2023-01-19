@@ -27,8 +27,6 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(2)
   },
   appBar: {
-    backgroundColor: theme.palette.type === "dark" ? theme.palette.grey[900] : theme.palette.primary.main,
-    color: theme.palette.type === "dark" ? theme.palette.text.primary : theme.palette.primary.contrastText
   }
 }));
 
@@ -56,7 +54,7 @@ export default function CustomAppBar(props) {
             color="inherit" 
             aria-label="dark-mode-toggle" 
             className={classes.darkModeButton}
-            onClick={() => props.toggleDarkMode(!props.darkIsEnabled)}
+            onClick={() => props.toggleDarkMode(props.darkIsEnabled ? 'light' : 'dark')}
           >
             <Brightness4Icon />
           </IconButton>
