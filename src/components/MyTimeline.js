@@ -9,7 +9,6 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ChildCareIcon from '@material-ui/icons/ChildCare';
-import { grey } from '@material-ui/core/colors';
 
 // Custom Components
 import CustomTimelineItem from './CustomTimelineItem';
@@ -18,14 +17,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     paddingBottom: theme.spacing(2)
   },
-  tempPaper: {
+  paper: {
     padding: theme.spacing(2),
   },
-  paper: {
+  preProfessionalLife: {
     padding: '6px 16px',
-  },
-  secondaryTail: {
-    backgroundColor: theme.palette.primary.main,
   },
   captionText: {
     textAlign: 'center'
@@ -79,7 +75,7 @@ function CustomizedTimeline() {
           </TimelineDot>
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={1} className={classes.paper}>
+          <Paper elevation={1} className={classes.preProfessionalLife}>
             <Typography variant="body1" component="h2">
               Pre-professional life
             </Typography>
@@ -97,10 +93,22 @@ export default function MyTimeline() {
     <React.Fragment>
       <Grid container spacing={3} justifyContent="center" className={classes.root}>
         <Grid item xs={12} sm={8}>
-          <Paper className={classes.tempPaper}>
-            <Typography variant="caption" component="h6" className={classes.captionText}>Present</Typography>
+          <Paper className={classes.paper}>
+            <Typography 
+              variant="caption" 
+              component="h6" 
+              className={classes.captionText}
+            >
+              Present
+            </Typography>
             <CustomizedTimeline></CustomizedTimeline>
-            <Typography variant="caption" component="h6" className={classes.captionText}>Past</Typography>
+            <Typography 
+              variant="caption" 
+              component="h6" 
+              className={classes.captionText}
+            >
+              Past
+            </Typography>
           </Paper>
         </Grid>
       </Grid>

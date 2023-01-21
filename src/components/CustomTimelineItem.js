@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import TimelineConnector from '@material-ui/lab/TimelineConnector';
@@ -9,31 +8,23 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
 import Typography from '@material-ui/core/Typography';
-import blue from '@material-ui/core/colors/blue';
 
 // Custom Components
 import TimelineItemContentCard from './TimelineItemContentCard';
 
-const useStyles = makeStyles((theme) => ({
-  timelineDot: {
-    backgroundColor: theme.palette.secondary.main
-  }
-}));
-
 function CustomTimelineDot(props) {
-  const classes = useStyles();
   const eventType = props.type;
 
   if (eventType === "work") {
     return (
-      <TimelineDot className={classes.timelineDot}>
+      <TimelineDot color="secondary">
         <WorkIcon />
       </TimelineDot>
     );
   }
   else if (eventType === "school") {
     return (
-      <TimelineDot className={classes.timelineDot}>
+      <TimelineDot color="secondary">
         <SchoolIcon />
       </TimelineDot>
     )

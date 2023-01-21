@@ -54,7 +54,8 @@ export default function CustomAppBar(props) {
             color="inherit" 
             aria-label="dark-mode-toggle" 
             className={classes.darkModeButton}
-            onClick={() => props.toggleDarkMode(props.darkIsEnabled ? 'light' : 'dark')}
+            onClick={
+              () => props.toggleDarkMode(props.darkIsEnabled ? 'light' : 'dark')}
           >
             <Brightness4Icon />
           </IconButton>

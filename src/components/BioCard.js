@@ -7,8 +7,6 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-  },
   textPaddingLeft: {
     paddingLeft: theme.spacing(1)
   },
@@ -21,7 +19,7 @@ export default function BioCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card>
         <CardContent>
           <div className={classes.textPaddingBottom}>
             <Typography 

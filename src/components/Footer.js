@@ -22,8 +22,13 @@ const Footer = () => {
   return (
     <div className={classes.root}>
       <Paper className={classes.paper} elevation={2} square>
-        <Typography variant="caption" component="p">Contact: brinley.macnamara@gmail.com</Typography>
-        <Typography variant="caption">Copyright &copy; 2023 Brinley Macnamara. All Rights Reserved.</Typography>
+        <Typography variant="caption" component="p">
+          Contact: brinley.macnamara@gmail.com
+        </Typography>
+        <Typography variant="caption">
+          Copyright &copy; {new Date().getFullYear()} Brinley Macnamara. 
+          All Rights Reserved.
+        </Typography>
       </Paper>
     </div>
   )

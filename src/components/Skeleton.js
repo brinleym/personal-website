@@ -13,9 +13,6 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     minHeight: '100vh'
   },
-  paper: {
-    padding: theme.spacing(2),
-  },
   sectionTitle: {
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(2),
@@ -30,15 +27,30 @@ export default function Skeleton() {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Typography variant="h4" className={classes.sectionTitle}>Overview</Typography>
+          <Typography 
+            variant="h4" 
+            className={classes.sectionTitle}
+          >
+            Overview
+          </Typography>
           <Overview></Overview>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h4" className={classes.sectionTitle}>Work</Typography>
+          <Typography 
+            variant="h4" 
+            className={classes.sectionTitle}
+          >
+            Work
+          </Typography>
           <WorksGrid></WorksGrid>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h4" className={classes.sectionTitle}>Timeline</Typography>
+          <Typography 
+            variant="h4" 
+            className={classes.sectionTitle}
+          >
+            Timeline
+          </Typography>
           <MyTimeline></MyTimeline>
         </Grid>
       </Grid>
