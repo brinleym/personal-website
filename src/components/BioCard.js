@@ -47,7 +47,7 @@ export default function BioCard() {
       <CardActions>
         <Button 
           size="small"
-          href="https://drive.google.com/file/d/1lNXpOdEbLakawLiMK-TQnS_jUAp_yw9l/view?usp=sharing"
+          href="https://drive.google.com/file/d/1RI743KZAoSTPt5y2b1OoOPUswc-6D8q4/view?usp=sharing"
           target="_blank"
         >
           Resume
