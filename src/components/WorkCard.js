@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import NotesIcon from '@material-ui/icons/Notes';
 import PodcastsIcon from '@mui/icons-material/Podcasts';
 import CodeIcon from '@mui/icons-material/Code';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
@@ -46,6 +47,12 @@ function WorkTypeIcon(props) {
     return (
       // Podcast icon
       <PodcastsIcon></PodcastsIcon>
+    )
+  }
+  else if (workType === "youtube") {
+    return (
+      // Video icon
+      <YouTubeIcon></YouTubeIcon>
     )
   }
   return (
