@@ -9,20 +9,20 @@ const WorksGrid = () => {
         <Grid item xs={12} md={4}>
           <WorkCard
               type="podcast"
-              title="MITRE's Tech Futures Podcast"
-              description="Get the lowdown on an emerging technology in the
-              time in takes to walk your dog!"
-              link="https://mitrestechfuturespodcast.buzzsprout.com/"
+              title="Brave New Machines"
+              description="Brave New Machines is a podcast about the artificial
+              intelligence, humanity, and the future."
+              link="https://sites.google.com/view/bravenewmachines/home"
             >
           </WorkCard>
         </Grid>
         <Grid item xs={12} md={4}>
           <WorkCard
-              type="youtube"
-              title="Principles of Amazing Websites"
-              description="In just 10 minutes, learn how to build a fast, beautiful, 
-              and intuitive website."
-              link="https://www.youtube.com/watch?v=lSnfIQPYGyE&t=510s"
+              type="podcast"
+              title="Tech Futures Podcast"
+              description="The Tech Futures Podcast is a podcast about emerging
+              technology, our government, and the future."
+              link="https://mitrestechfuturespodcast.buzzsprout.com/"
             >
           </WorkCard>
         </Grid>
@@ -37,21 +37,11 @@ const WorksGrid = () => {
           </WorkCard>  
         </Grid>
         <Grid item xs={12} md={4}>
-        <WorkCard
-            type="code"
-            title="AlgoExpert"
-            description="Earned AlgoExpert Certification for successfully
-            completing 100 coding problems on the platform."
-            link="https://certificate.algoexpert.io/AlgoExpert%20Certificate%20AE-ac91ea8e92"
-          >
-          </WorkCard>
-        </Grid>
-        <Grid item xs={12} md={4}>
           <WorkCard
               type="written"
               title="STEM in the Age of TikTok"
-              description="Workshop on how TikTok has changed the
-              way we learn about STEM topics."
+              description="How has TikTok shaped the way we learn about science
+              and technology?"
               link="https://drive.google.com/drive/folders/18PhYQw0JhZZCV1_9Yo80ZO5bZJ2DnQzI?usp=sharing"
             >
             </WorkCard>
@@ -60,9 +50,7 @@ const WorksGrid = () => {
           <WorkCard
             type="written"
             title="Early Career Hacks"
-            description="Visual guide for college-to-work
-            transition hacks; used to complement a talk I gave on the
-            subject."
+            description="Helpful hacks for the college to work transition"
             link="https://drive.google.com/file/d/1twqH4-hnAQ4_xZQ207Eg2vt9lvV8vNoC/view?usp=sharing"
           >
           </WorkCard>
