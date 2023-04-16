@@ -10,7 +10,7 @@ const WorksGrid = () => {
           <WorkCard
               type="podcast"
               title="Brave New Machines"
-              description="Brave New Machines is a podcast about the artificial
+              description="Brave New Machines is a podcast about artificial
               intelligence, humanity, and the future."
               link="https://sites.google.com/view/bravenewmachines/home"
             >
