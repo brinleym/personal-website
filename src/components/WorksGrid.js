@@ -9,10 +9,9 @@ const WorksGrid = () => {
         <Grid item xs={12} md={4}>
           <WorkCard
               type="podcast"
-              title="Brave New Machines"
-              description="Brave New Machines is a podcast about artificial
-              intelligence, humanity, and the future."
-              link="https://sites.google.com/view/bravenewmachines/home"
+              title="Unpopular Science"
+              description="Unpopular Science is a podcast about unconventional scientists, contrarian ideas, and the future."
+              link="https://www.unpopular.science/"
             >
           </WorkCard>
         </Grid>
