@@ -9,9 +9,9 @@ const WorksGrid = () => {
         <Grid item xs={12} md={4}>
           <WorkCard
               type="podcast"
-              title="Unpopular Science"
-              description="Unpopular Science is a podcast about unconventional scientists, contrarian ideas, and the future."
-              link="https://www.unpopular.science/"
+              title="Rethought"
+              description="Rethought is a podcast about contrarian ideas in science and technology"
+              link="https://rethought.buzzsprout.com/"
             >
           </WorkCard>
         </Grid>
