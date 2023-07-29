@@ -8,19 +8,20 @@ const WorksGrid = () => {
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
           <WorkCard
-              type="podcast"
-              title="Rethought"
-              description="Rethought is a podcast about contrarian ideas in science and technology"
-              link="https://rethought.buzzsprout.com/"
+              type="code"
+              title="Freelance Work"
+              description="See customer reviews and sample projects!"
+              link="https://brinleym.notion.site/Brinley-Freelance-Home-e83e68056cf345e9836f3e9a6632d4f5"
             >
           </WorkCard>
-        </Grid>
+        </Grid>     
         <Grid item xs={12} md={4}>
           <WorkCard
               type="podcast"
               title="Tech Futures Podcast"
-              description="The Tech Futures Podcast is a podcast about emerging
-              technology, our government, and the future."
+              description="Was formally the host of the Tech Futures Podcast, a 
+              podcast about the national security implications of emerging
+              technology."
               link="https://mitrestechfuturespodcast.buzzsprout.com/"
             >
           </WorkCard>

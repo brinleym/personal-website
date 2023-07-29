@@ -40,7 +40,7 @@ export default function Skeleton() {
             variant="h4" 
             className={classes.sectionTitle}
           >
-            Work
+            Projects
           </Typography>
           <WorksGrid></WorksGrid>
         </Grid>
