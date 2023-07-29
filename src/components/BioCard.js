@@ -38,7 +38,8 @@ export default function BioCard() {
           <Typography variant="body1" color="textSecondary" component="p" gutterBottom>
             Thank you for visiting my website! I’m a versatile software engineer 
             who loves frontend engineering, ui design, and creating amazing
-            customer experiences. I'm currently based in Boston.
+            customer experiences. In my spare time, I enjoy yoga as well as 
+            listening to (and occasionally creating) podcasts.
           </Typography>
           <Typography variant="body1" color="textSecondary" component="p">
             Hit me up at <b>brinley.macnamara@gmail.com</b>
