@@ -1,9 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
@@ -45,15 +43,6 @@ export default function BioCard() {
             Hit me up at <b>brinley.macnamara@gmail.com</b>
           </Typography>
         </CardContent>
-      <CardActions>
-        <Button 
-          size="small"
-          href="https://drive.google.com/file/d/1RI743KZAoSTPt5y2b1OoOPUswc-6D8q4/view?usp=sharing"
-          target="_blank"
-        >
-          Resume
-        </Button>
-      </CardActions>
     </Card>
   );
 }

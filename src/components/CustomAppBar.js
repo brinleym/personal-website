@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 
@@ -43,13 +42,6 @@ export default function CustomAppBar(props) {
           <Typography variant="h6" className={classes.titleDesktop}>
             Brinley Macnamara
           </Typography>
-          <Button 
-            color="inherit" 
-            href="https://drive.google.com/file/d/1RI743KZAoSTPt5y2b1OoOPUswc-6D8q4/view?usp=sharing"
-            target="_blank"
-          >
-            Resume
-          </Button>
           <IconButton 
             color="inherit" 
             aria-label="dark-mode-toggle" 
